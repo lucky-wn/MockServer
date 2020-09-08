@@ -26,4 +26,4 @@ app.register_blueprint(api_blueprint, url_prefix="/api")
 @app.errorhandler(404)
 def page_not_found(error):
     """404"""
-    return render_template('home/404.html'), 404
+    return render_template('api/404.html'), 404
